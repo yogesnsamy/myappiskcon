@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>xx yy zz <%= title %></p>
+    <% images.forEach(file => { %>
+    <p><%= file.id %></p>
+    <img
+      src="https://drive.google.com/uc?export=view&id=<%=file.id%>"></img>
+    <% }); %>
+  </body>
+</html>
+-------------- -->
+<% include partials/header %>
+<div class="container">
+  <div class="tz-gallery">
+    <div class="row">
+      <% images.forEach(file => { %>
+      <div class="col-sm-6 col-md-4">
+        <a class="lightbox" href="https://drive.google.com/uc?export=view&id=<%=file.id%>">
+          <img src="https://drive.google.com/uc?export=view&id=<%=file.id%>" alt="Park">
+        </a>
+      </div>
+      <% }); %>
+    </div>
+
+  </div>
+
+</div>
+
+{{!-- <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+  <% images.forEach(function(campground){ %>
+  <div class="col-md-3 col-sm-6">
+    <div class="thumbnail">
+      <img src="<%= campground.image %>">
+      <div class="caption">
+        <h4>
+          <%= campground.name %>
+        </h4>
+      </div>
+      <p>
+        <img src="https://drive.google.com/uc?export=view&id=<%=campground.id%>" alt="Park">
+        <a href="/campgrounds/<%=campground._id%>" class="btn btn-primary">More Info</a>
+      </p>
+    </div>
+  </div>
+  <% }); %>
+</div> --}}
+</div>
+</div>
+</div>
+<% include partials/footer %>
