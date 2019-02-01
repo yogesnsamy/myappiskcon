@@ -1,8 +1,7 @@
 Working sample: https://iskconalbumkl.herokuapp.com/
 
-This app fetches images from Google Drive and displays them in a Lightbox gallery.
 The app uses the Express framework with EJS as the templating engine. 
-'Lightbox for Bootstrap' is used for image display: http://ashleydw.github.io/lightbox/
+'Lightbox for Bootstrap' is used for image display: http://ashleydw.github.io/lightbox/.
 
 Steps to test the app locally:
 
