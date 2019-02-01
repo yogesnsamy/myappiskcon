@@ -20,3 +20,7 @@ Steps to test the app locally:
 5. Type 'npm install' to install all dependencies.
 
 6. Type 'npm start' to start the app locally and view it at http://localhost:3000
+
+Key logic is in the following files:
+- routes/index.js
+- views/index.ejs
