@@ -1,8 +1,3 @@
-body {
-  padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-}
-
 a {
   color: #00b7ff;
 }
@@ -12,33 +7,11 @@ a {
   --fade-time: 0.5s;
 }
 
-body {
-  margin: 20px;
-  padding: 0;
-  background: #fff;
-}
-
 .container {
   max-width: 760px;
   margin: auto;
   border: #fff solid 3px;
   background: #fff;
-}
-
-.main-img img,
-.imgs img {
-  width: 10%;
-}
-
-.imgs {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-}
-
-.imgs img {
-  cursor: pointer;
-  height: 150px;
 }
 
 /* Fade in animation */
