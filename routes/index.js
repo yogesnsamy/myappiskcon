@@ -4,16 +4,17 @@ var router = express.Router();
 //const google = require('googleapis');
 const { google } = require('googleapis');
 const fs = require('fs');
-const key = require('./config.json');
+// const key = require('./config.json');
+const { client_email, private_key } = require('./config');
 const drive = google.drive('v3');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   let images;
   const jwtClient = new google.auth.JWT(
-    key.client_email,
+    client_email,
     null,
-    key.private_key,
+    private_key,
     ['https://www.googleapis.com/auth/drive'],
     null
   );
